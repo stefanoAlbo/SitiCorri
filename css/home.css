@@ -1,6 +1,5 @@
 body {
-    font-family: sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 20px;
     justify-content: center;
@@ -18,6 +17,42 @@ body {
     align-items: center;
     padding: 10px 20px;
     display: flex;   
+}
+
+nav{
+    background-color: #444;
+    content: "";
+    display: table;
+    box-sizing: border-box;  
+    padding: 0px 0;
+    height: 20px;
+    min-width: 100%;
+    min-height: 3%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li button:hover {
+    background-color: #00aafb;  /* colore al passaggio del mouse */
+    transition: 0.3s;  /* transizione fluida (opzionale) */
+}
+
+nav ul li button {
+    color: white;
+    text-decoration: none;
+    padding: 17px 25px;
+    background-color: transparent;  
+    border: none;  
+    cursor: pointer;
+    font-size: 18px;
+    font-family: sans-serif;
+    min-height: 20px;
 }
 
 .articoli{
