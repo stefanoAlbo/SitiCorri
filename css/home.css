@@ -6,17 +6,30 @@ body {
 }
 
 .head{
-    justify-content: baseline;
-    justify-items:first baseline ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px 0;
 }
 
-.img_head{
-    max-height: 30%;
-    height: auto;
-    width: 400px;
-    align-items: center;
-    padding: 10px 20px;
-    display: flex;   
+.head > div {
+    display: inline-block;
+}
+
+.img_head_sito{
+    max-height: 190px;
+    width: auto;
+    padding: 10px 30px;
+    display: inline-block;
+}
+
+.img_head_col {
+    max-height: 190px;
+    width: auto;
+    padding: 10px 300px;
+    display: inline-block;
 }
 
 nav{
@@ -28,6 +41,7 @@ nav{
     height: 20px;
     min-width: 100%;
     min-height: 3%;
+    flex-basis: 100%;
 }
 
 nav ul {
@@ -46,7 +60,7 @@ nav ul li button:hover {
 nav ul li button {
     color: white;
     text-decoration: none;
-    padding: 17px 25px;
+    padding: 12px 25px;
     background-color: transparent;  
     border: none;  
     cursor: pointer;
